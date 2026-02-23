@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>كل الوصفات بالمقادير | بسبوسة روعة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-orange-50/50 font-['Cairo'] text-right px-6 py-12">
+    <div class="container mx-auto">
+        <a href="index.html" class="text-orange-600 font-bold mb-10 inline-block">← الرجوع للرئيسية</a>
+        <h1 class="text-4xl font-black text-amber-950 mb-16 text-center">موسوعة الـ 9 وصفات الذهبية </h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <script>
+                const data = [
+                    {t: "البسبوسة السادة", m: "3 كوب سميد، كوب سمنة، كوب سكر، كوب لبن."},
+                    {t: "بسبوسة الزبادي", m: "نص كيلو سميد، 2 علبة زبادي، سمنة، بيكنج بودر."},
+                    {t: "بسبوسة القشطة", m: "سميد، سكر، قشطة بلدي، شربات خفيف."},
+                    {t: "بسبوسة اللوز", m: "سميد، جوز هند، سمنة، لوز محمص للتزيين."},
+                    {t: "بسبوسة الشوكولاتة", m: "سميد، كاكاو خام، سمنة، صوص نوتيلا."},
+                    {t: "بسبوسة مكرملة", m: "سكر مكرمل، سميد، ماء دافئ، سمنة بلدي."},
+                    {t: "بسبوسة بجوز الهند", m: "كوب جوز هند ناعم، سميد، زبادي، سمنة."},
+                    {t: "بسبوسة السينابون", m: "سميد، قرفة، صوص كراميل، سمنة."},
+                    {t: "بسبوسة الصيام (لايت)", m: "سميد، عصير برتقال، زيت نباتي، جوز هند."}
+                ];
+                data.forEach(item => {
+                    document.write(`
+                        <div class="bg-white p-8 rounded-[40px] shadow-lg border border-orange-100">
+                            <h3 class="text-2xl font-black text-orange-600 mb-4">${item.t}</h3>
+                            <p class="text-amber-950 font-bold mb-2 underline">المقادير:</p>
+                            <p class="text-gray-600 mb-6 leading-relaxed">${item.m}</p>
+                            <button class="w-full bg-amber-950 text-white py-2 rounded-2xl">عرض خطوات التحضير</button>
+                        </div>
+                    `);
+                });
+            </script>
+        </div>
+    </div>
+</body>
+</html>
