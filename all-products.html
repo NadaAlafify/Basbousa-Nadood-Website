@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <title>كل الأنواع | بسبوسة ندود</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
-</head>
-<body class="bg-orange-50/30 font-['Cairo']">
-    <div class="container mx-auto px-6 py-12">
-        <a href="index.html" class="text-orange-600 font-bold mb-8 inline-block hover:bg-orange-100 px-4 py-1 rounded-lg transition">← الرجوع للرئيسية</a>
-        <h1 class="text-4xl font-black text-amber-950 mb-12 text-center">قائمة الـ 9 أنواع الفاخرة 🛒</h1>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-right">
-            <script>
-                const products = [
-                    {n: "بسبوسة السمن البلدي", p: "140", d: "طعم زمان الأصلي بالسمنة البلدي الفاخرة.", i: "pic/pic2.jpg"},
-                    {n: "بسبوسة القشطة الملكية", p: "180", d: "محشية طبقة غنية من القشطة الطازجة.", i: "pic/pic6.jpg"},
-                    {n: "بسبوسة المكسرات المشكلة", p: "200", d: "متغطية بأفخم أنواع اللوز والبندق المحمص.", i: "pic/pic1.jpg"},
-                    {n: "بسبوسة نوتيلا السعادة", p: "220", d: "غرقانة بصوص الشوكولاتة الأصلي.", i: "pic/pic9.jpg"},
-                    {n: "بسبوسة زبدة اللوتس", p: "210", d: "لعشاق اللوتس والكرانش المميز.", i: "pic/pic7.jpg"},
-                    {n: "بسبوسة الفستق الحلبي", p: "280", d: "فخامة الفستق الأخضر في كل قطمة.", i: "pic/pic5.jpg"},
-                    {n: "بسبوسة الكراميل المملح", p: "170", d: "ميكس غريب بس هيخطف قلبك.", i: "pic/pic11.jpg"},
-                    {n: "بسبوسة السينابون والقرفة", p: "160", d: "ريحة القرفة مع الترميلة حكاية ثانية.", i: "pic/pic3.jpg"},
-                    {n: "بسبوسة البرتقال ", p: "250", d: "لو محتارة.. سر الانتعاش والترميلة المظبوطة .", i: "pic/pic10.jpg"}
-                ];
-
-                products.forEach(item => {
-                    document.write(`
-                        <div class="bg-white rounded-[32px] overflow-hidden shadow-xl border border-orange-50 hover:-translate-y-2 transition duration-300">
-                            <img src="${item.i}" alt="${item.n}" class="w-full h-56 object-cover border-b border-orange-50">
-                            
-                            <div class="p-6">
-                                <h3 class="text-2xl font-bold text-amber-950 mb-2">${item.n}</h3>
-                                <p class="text-gray-500 mb-6 text-sm">${item.d}</p>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-2xl font-black text-orange-600">${item.p} ج.م</span>
-                                    <a href="https://wa.me/201234567890" class="bg-amber-950 text-white px-6 py-2 rounded-xl font-bold hover:bg-orange-600 transition">اطلبي الآن</a>
+    <head>
+        <meta charset="UTF-8">
+        <title>كل الأنواع | بسبوسة ندود</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body class="bg-orange-50/30 font-['Cairo']">
+        <div class="container mx-auto px-6 py-12">
+            <a href="index.html" class="text-orange-600 font-bold mb-8 inline-block hover:bg-orange-100 px-4 py-1 rounded-lg transition">← الرجوع للرئيسية</a>
+            <h1 class="text-4xl font-black text-amber-950 mb-12 text-center">قائمة الـ 9 أنواع الفاخرة 🛒</h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-right">
+                <script>
+                    const products = [
+                        {n: "بسبوسة السمن البلدي", p: "140", d: "طعم زمان الأصلي بالسمنة البلدي الفاخرة.", i: "pic/pic2.jpg"},
+                        {n: "بسبوسة القشطة الملكية", p: "180", d: "محشية طبقة غنية من القشطة الطازجة.", i: "pic/pic6.jpg"},
+                        {n: "بسبوسة المكسرات المشكلة", p: "200", d: "متغطية بأفخم أنواع اللوز والبندق المحمص.", i: "pic/pic1.jpg"},
+                        {n: "بسبوسة نوتيلا السعادة", p: "220", d: "غرقانة بصوص الشوكولاتة الأصلي.", i: "pic/pic9.jpg"},
+                        {n: "بسبوسة زبدة اللوتس", p: "210", d: "لعشاق اللوتس والكرانش المميز.", i: "pic/pic7.jpg"},
+                        {n: "بسبوسة الفستق الحلبي", p: "280", d: "فخامة الفستق الأخضر في كل قطمة.", i: "pic/pic5.jpg"},
+                        {n: "بسبوسة الكراميل المملح", p: "170", d: "ميكس غريب بس هيخطف قلبك.", i: "pic/pic11.jpg"},
+                        {n: "بسبوسة السينابون والقرفة", p: "160", d: "ريحة القرفة مع الترميلة حكاية ثانية.", i: "pic/pic3.jpg"},
+                        {n: "بسبوسة البرتقال ", p: "250", d: "لو محتارة.. سر الانتعاش والترميلة المظبوطة .", i: "pic/pic10.jpg"}
+                    ];
+    
+                    products.forEach(item => {
+                        document.write(`
+                            <div class="bg-white rounded-[32px] overflow-hidden shadow-xl border border-orange-50 hover:-translate-y-2 transition duration-300">
+                                <img src="${item.i}" alt="${item.n}" class="w-full h-56 object-cover border-b border-orange-50">
+                                
+                                <div class="p-6">
+                                    <h3 class="text-2xl font-bold text-amber-950 mb-2">${item.n}</h3>
+                                    <p class="text-gray-500 mb-6 text-sm">${item.d}</p>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-2xl font-black text-orange-600">${item.p} ج.م</span>
+                                        <a href="https://wa.me/201234567890" class="bg-amber-950 text-white px-6 py-2 rounded-xl font-bold hover:bg-orange-600 transition">اطلبي الآن</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    `);
-                });
-            </script>
+                        `);
+                    });
+                </script>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
